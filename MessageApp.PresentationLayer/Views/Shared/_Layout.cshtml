@@ -1,153 +1,237 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
+<!-- [Head] start -->
 
 <head>
-    <title>Flat Able - Premium Admin Template by Phoenixcoded</title>
-
-    <!-- Meta -->
+    <title>Home | Flat Able Dashboard Template</title>
+    <!-- [Meta] -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="">
-    <meta name="author" content="Phoenixcoded" />
-    <!-- Favicon icon -->
-    <link rel="icon" href="flat-able-lite/dist/assets/images/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Flat Able is trending dashboard template made using Bootstrap 5 design framework. Flat Able is available in Bootstrap, React, CodeIgniter, Angular,  and .net Technologies.">
+    <meta name="keywords" content="Bootstrap admin template, Dashboard UI Kit, Dashboard Template, Backend Panel, react dashboard, angular dashboard">
+    <meta name="author" content="phoenixcoded">
 
-    <!-- vendor css -->
-    <link rel="stylesheet" href="flat-able-lite/dist/assets/css/style.css">
+    <!-- [Favicon] icon -->
+    <link rel="icon" href="../flat-able/dist/assets/images/favicon.svg" type="image/x-icon">
+    <!-- [Google Font : Public Sans] icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-
+    <!-- [Tabler Icons] https://tablericons.com -->
+    <link rel="stylesheet" href="../flat-able/dist/assets/fonts/tabler-icons.min.css">
+    <!-- [Feather Icons] https://feathericons.com -->
+    <link rel="stylesheet" href="../flat-able/dist/assets/fonts/feather.css">
+    <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="../flat-able/dist/assets/fonts/fontawesome.css">
+    <!-- [Material Icons] https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="../flat-able/dist/assets/fonts/material.css">
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="../flat-able/dist/assets/css/style.css" id="main-style-link">
+    <link rel="stylesheet" href="../flat-able/dist/assets/css/style-preset.css">
 
 </head>
-<body class="">
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body data-pc-preset="preset-1" data-pc-sidebar-theme="dark" data-pc-sidebar-caption="true" data-pc-direction="ltr" data-pc-theme="light">
     <!-- [ Pre-loader ] start -->
     <div class="loader-bg">
-        <div class="loader-track">
+        <div class="pc-loader">
             <div class="loader-fill"></div>
         </div>
     </div>
     <!-- [ Pre-loader ] End -->
-    <!-- [ navigation menu ] start -->
-    @* <nav class="pcoded-navbar  ">
-        <div class="navbar-wrapper  ">
-            <div class="navbar-content scroll-div ">
+    <!-- [ Sidebar Menu ] start -->
+    <nav class="pc-sidebar">
+        <div class="navbar-wrapper">
+            <div class="m-header">
+                <a href="../flat-able/dist/dashboard/index.html" class="b-brand text-primary">
+                    <!-- ========   Change your logo from here   ============ -->
+                    <img src="../flat-able/dist/assets/images/logo-white.svg" alt="logo image" class="logo-lg">
+                    <span class="badge bg-primary rounded-pill ms-2 theme-version">v1.2</span>
+                </a>
+            </div>
 
-                <div class="">
-                    <div class="main-menu-header">
-                        <img class="img-radius" src="flat-able-lite/dist/assets/images/user/avatar-2.jpg" alt="User-Profile-Image">
-                        <div class="user-details">
-                            <span>John Doe</span>
-                            <div id="more-details">UX Designer<i class="fa fa-chevron-down m-l-5"></i></div>
-                        </div>
-                    </div>
-                    <div class="collapse" id="nav-user-link">
-                        <ul class="list-unstyled">
-                            <li class="list-group-item"><a href="user-profile.html"><i class="feather icon-user m-r-5"></i>View Profile</a></li>
-                            <li class="list-group-item"><a href="#!"><i class="feather icon-settings m-r-5"></i>Settings</a></li>
-                            <li class="list-group-item"><a href="auth-normal-sign-in.html"><i class="feather icon-log-out m-r-5"></i>Logout</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <ul class="nav pcoded-inner-navbar ">
-                    <li class="nav-item pcoded-menu-caption">
+            
+            <div class="navbar-content">
+                <ul class="pc-navbar">
+                    <li class="pc-item pc-caption">
                         <label>Navigation</label>
                     </li>
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+                    <li class="pc-item">
+                        <a href="../flat-able/dist/dashboard/index.html" class="pc-link">
+                            <span class="pc-micon">
+                                <i class="ph-duotone ph-gauge"></i>
+                            </span>
+                            <span class="pc-mtext">Dashboard</span>
+                        </a>
                     </li>
-                    <li class="nav-item pcoded-hasmenu">
-                        <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Page layouts</span></a>
-                        <ul class="pcoded-submenu">
-                            <li><a href="layout-vertical.html" target="_blank">Vertical</a></li>
-                            <li><a href="layout-horizontal.html" target="_blank">Horizontal</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>UI Element</label>
-                    </li>
-                    <li class="nav-item pcoded-hasmenu">
-                        <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Basic</span></a>
-                        <ul class="pcoded-submenu">
-                            <li><a href="bc_alert.html">Alert</a></li>
-                            <li><a href="bc_button.html">Button</a></li>
-                            <li><a href="bc_badges.html">Badges</a></li>
-                            <li><a href="bc_breadcrumb-pagination.html">Breadcrumb & paggination</a></li>
-                            <li><a href="bc_card.html">Cards</a></li>
-                            <li><a href="bc_collapse.html">Collapse</a></li>
-                            <li><a href="bc_carousel.html">Carousel</a></li>
-                            <li><a href="bc_grid.html">Grid system</a></li>
-                            <li><a href="bc_progress.html">Progress</a></li>
-                            <li><a href="bc_modal.html">Modal</a></li>
-                            <li><a href="bc_spinner.html">Spinner</a></li>
-                            <li><a href="bc_tabs.html">Tabs & pills</a></li>
-                            <li><a href="bc_typography.html">Typography</a></li>
-                            <li><a href="bc_tooltip-popover.html">Tooltip & popovers</a></li>
-                            <li><a href="bc_toasts.html">Toasts</a></li>
-                            <li><a href="bc_extra.html">Other</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Forms &amp; table</label>
-                    </li>
-                    <li class="nav-item">
-                        <a href="form_elements.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Forms</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="tbl_bootstrap.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-align-justify"></i></span><span class="pcoded-mtext">Bootstrap table</span></a>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Chart & Maps</label>
-                    </li>
-                    <li class="nav-item">
-                        <a href="chart-apex.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span><span class="pcoded-mtext">Chart</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="map-google.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-map"></i></span><span class="pcoded-mtext">Maps</span></a>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Pages</label>
-                    </li>
-                    <li class="nav-item pcoded-hasmenu">
-                        <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-lock"></i></span><span class="pcoded-mtext">Authentication</span></a>
-                        <ul class="pcoded-submenu">
-                            <li><a href="auth-signup.html" target="_blank">Sign up</a></li>
-                            <li><a href="auth-signin.html" target="_blank">Sign in</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
-
-                </ul>
-
-                
-
             </div>
         </div>
-    </nav> *@
-    <!-- [ navigation menu ] end -->
-    <!-- [ Main Content ] start -->
-
-        <div class="pcoded-content " style="height:100vh">
-
-            <!-- [ Main Content ] start -->
-                @RenderBody()
-            <!-- [ Main Content ] end -->
+    </nav>
+    <!-- [ Sidebar Menu ] end --> <!-- [ Header Topbar ] start -->
+    <header class="pc-header">
+        <div class="header-wrapper">
+            <!-- [Mobile Media Block] start -->
+            <div class="me-auto pc-mob-drp">
+                <ul class="list-unstyled">
+                    <!-- ======= Menu collapse Icon ===== -->
+                    <li class="pc-h-item pc-sidebar-collapse">
+                        <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
+                            <i class="ph-duotone ph-list"></i>
+                        </a>
+                    </li>
+                    <li class="pc-h-item pc-sidebar-popup">
+                        <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
+                            <i class="ph-duotone ph-list"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown pc-h-item">
+                        <a class="pc-head-link dropdown-toggle arrow-none m-0 trig-drp-search"
+                           data-bs-toggle="dropdown"
+                           href="#"
+                           role="button"
+                           aria-haspopup="false"
+                           aria-expanded="false">
+                            <i class="ph-duotone ph-magnifying-glass"></i>
+                        </a>
+                        <div class="dropdown-menu pc-h-dropdown drp-search">
+                            <form class="px-1">
+                                <div class="form-group mb-0 d-flex align-items-center">
+                                    <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
+                                    <button class="btn btn-light-secondary btn-search">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- [Mobile Media Block end] -->
+            <div class="ms-auto">
+                <ul class="list-unstyled">
+                    <li class="dropdown pc-h-item header-user-profile">
+                        <a class="pc-head-link dropdown-toggle arrow-none me-0"
+                           data-bs-toggle="dropdown"
+                           href="#"
+                           role="button"
+                           aria-haspopup="false"
+                           data-bs-auto-close="outside"
+                           aria-expanded="false">
+                            <img src="../flat-able/dist/assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+                        </a>
+                        <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+                            <div class="dropdown-header d-flex align-items-center justify-content-between">
+                                <h4 class="m-0">Profile</h4>
+                            </div>
+                            <div class="dropdown-body">
+                                <div class="profile-notification-scroll position-relative" style="max-height: calc(100vh - 225px)">
+                                    <ul class="list-group list-group-flush w-100">
+                                        <li class="list-group-item">
+                                            <a href="https://themeforest.net/item/flat-able-bootstrap-4-admin-template/19842250" target="_blank" class="dropdown-item">
+                                                <span class="d-flex align-items-center">
+                                                    <i class="ph-duotone ph-arrow-circle-down"></i>
+                                                    <span>Download</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#" class="dropdown-item">
+                                                <span class="d-flex align-items-center">
+                                                    <i class="ph-duotone ph-user-circle"></i>
+                                                    <span>Edit profile</span>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <span class="d-flex align-items-center">
+                                                    <i class="ph-duotone ph-bell"></i>
+                                                    <span>Notifications</span>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <span class="d-flex align-items-center">
+                                                    <i class="ph-duotone ph-gear-six"></i>
+                                                    <span>Settings</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#" class="dropdown-item">
+                                                <span class="d-flex align-items-center">
+                                                    <i class="ph-duotone ph-plus-circle"></i>
+                                                    <span>Add account</span>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <span class="d-flex align-items-center">
+                                                    <i class="ph-duotone ph-power"></i>
+                                                    <span>Logout</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-
- 
-    
-
+    </header>
+    <!-- [ Header ] end -->
+    <!-- [ Main Content ] start -->
+    <div class="pc-container">
+        <div class="pc-content">
+            @RenderBody()
+        </div>
+    </div>
+    <!-- [ Main Content ] end -->
+   
+    <!-- [Page Specific JS] start -->
+    <script src="../flat-able/dist/assets/js/plugins/apexcharts.min.js"></script>
+    <script src="../flat-able/dist/assets/js/pages/dashboard-default.js"></script>
+    <!-- [Page Specific JS] end -->
     <!-- Required Js -->
-    <script src="/flat-able-lite/dist/assets/js/vendor-all.min.js"></script> 
-    <script src="/flat-able-lite/dist/assets/js/plugins/bootstrap.min.js"></script>
-    <script src="/flat-able-lite/dist/assets/js/pcoded.min.js"></script> 
+    <script src="../flat-able/dist/assets/js/plugins/popper.min.js"></script>
+    <script src="../flat-able/dist/assets/js/plugins/simplebar.min.js"></script>
+    <script src="../flat-able/dist/assets/js/plugins/bootstrap.min.js"></script>
+    <script src="../flat-able/dist/assets/js/fonts/custom-font.js"></script>
+    <script src="../flat-able/dist/assets/js/pcoded.js"></script>
+    <script src="../flat-able/dist/assets/js/plugins/feather.min.js"></script>
 
-    <!-- Apex Chart -->
-    <script src="/flat-able-lite/dist/assets/js/plugins/apexcharts.min.js"></script>
 
-    <!-- custom-chart js --> 
-    <script src="/flat-able-lite/dist/assets/js/pages/dashboard-main.js"></script>
+
+
+
+    <script>layout_change('light');</script>
+
+
+
+    <script>layout_sidebar_change('dark');</script>
+
+
+
+
+    <script>layout_header_change('dark');</script>
+
+
+
+
+
+    <script>change_box_container('false');</script>
+
+
+    <script>layout_caption_change('true');</script>
+
+
+
+
+    <script>layout_rtl_change('false');</script>
+
+
+    <script>preset_change("preset-1");</script>
+
 </body>
+<!-- [Body] end -->
 
 </html>

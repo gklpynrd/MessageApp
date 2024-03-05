@@ -1,24 +1,10 @@
-﻿<div class="container">
-
-    <div class="card chat-card" style="height:94vh">
-
+﻿ <div class="card chat-card" style="height:88vh">
+        <div class="row"style=" margin:0">
+        
         <div class="card-header">
             <h5>Chat</h5>
-            <div class="card-header-right">
-                <div class="btn-group card-option">
-                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="feather icon-more-horizontal"></i>
-                    </button>
-                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
-                        <li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
-                        <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
-                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
-                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
-                    </ul>
-                </div>
-            </div>
         </div>
-        <div class="card-body">
+        <div class="card-body overflow-y-scroll" style="height:73vh">
             <div class="row m-b-20 received-chat">
                 <div class="col-auto p-r-0">
                     <img src="flat-able-lite/dist/assets/images/user/avatar-2.jpg" alt="user image" class="img-radius wid-40">
@@ -54,7 +40,57 @@
                     <p class="text-muted m-b-0"><i class="fa fa-clock-o m-r-10"></i>10:20am</p>
                 </div>
             </div>
+            
+            <div class="row m-b-20 send-chat">
+                <div class="col">
+                    <div class="msg">
+                        <p class="m-b-0">What is love!</p>
+                    </div>
+                    <p class="text-muted m-b-0"><i class="fa fa-clock-o m-r-10"></i>10:20am</p>
+                </div>
+                <div class="col-auto p-l-0">
+                    <img src="flat-able-lite/dist/assets/images/user/avatar-3.jpg" alt="user image" class="img-radius wid-40">
+                </div>
+            </div>
+
+            <div class="row m-b-20 received-chat">
+                <div class="col-auto p-r-0">
+                    <img src="flat-able-lite/dist/assets/images/user/avatar-2.jpg" alt="user image" class="img-radius wid-40">
+                </div>
+                <div class="col">
+                    <div class="msg">
+                        <p class="m-b-0">Fehmi dont hurt me</p>
+                    </div>
+                    <p class="text-muted m-b-0"><i class="fa fa-clock-o m-r-10"></i>10:20am</p>
+                </div>
+            </div>
+
+            <div class="row m-b-20 send-chat">
+                <div class="col">
+                    <div class="msg">
+                        <p class="m-b-0">Dont hurt me</p>
+                    </div>
+                    <p class="text-muted m-b-0"><i class="fa fa-clock-o m-r-10"></i>10:20am</p>
+                </div>
+                <div class="col-auto p-l-0">
+                    <img src="flat-able-lite/dist/assets/images/user/avatar-3.jpg" alt="user image" class="img-radius wid-40">
+                </div>
+            </div>
            
+
+            <div class="row m-b-20 received-chat">
+                <div class="col-auto p-r-0">
+                    <img src="flat-able-lite/dist/assets/images/user/avatar-2.jpg" alt="user image" class="img-radius wid-40">
+                </div>
+                <div class="col">
+                    <div class="msg">
+                        <p class="m-b-0">No more</p>
+                    </div>
+                    <p class="text-muted m-b-0"><i class="fa fa-clock-o m-r-10"></i>10:20am</p>
+                </div>
+            </div>
+       
+        
         </div>
         <div class="input-group m-t-15">
             <input type="text" name="task-insert" class="form-control" id="Project" placeholder="Send message">
@@ -65,5 +101,3 @@
             </div>
         </div>
     </div>
-
-</div>
